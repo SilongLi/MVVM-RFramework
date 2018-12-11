@@ -68,6 +68,7 @@
 		999EAD4021BE42A8004C676D /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999EAD3F21BE42A7004C676D /* UIView+Helper.swift */; };
 		99F8319F21BF6A560059B344 /* HomeServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F8319E21BF6A560059B344 /* HomeServices.swift */; };
 		99F831A121BF92980059B344 /* CommonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F831A021BF92980059B344 /* CommonEnum.swift */; };
+		99F831A321BF9F100059B344 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F831A221BF9F100059B344 /* HomeRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,6 +135,7 @@
 		999EAD3F21BE42A7004C676D /* UIView+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Helper.swift"; sourceTree = "<group>"; };
 		99F8319E21BF6A560059B344 /* HomeServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServices.swift; sourceTree = "<group>"; };
 		99F831A021BF92980059B344 /* CommonEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonEnum.swift; sourceTree = "<group>"; };
+		99F831A221BF9F100059B344 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +229,7 @@
 		9932A05221B7AB16003DC45A /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				99F831A221BF9F100059B344 /* HomeRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				9932A07221B7B3AF003DC45A /* BaseViewModelProtocol.swift in Sources */,
 				9932A03E21B7AA89003DC45A /* ViewController.swift in Sources */,
 				9932A0B021B7B914003DC45A /* Typealiases.swift in Sources */,
+				99F831A321BF9F100059B344 /* HomeRouter.swift in Sources */,
 				9932A05A21B7ACA9003DC45A /* UITableView+nib.swift in Sources */,
 				9932A07421B7B4D0003DC45A /* HomeViewModel.swift in Sources */,
 				9932A0A121B7B914003DC45A /* ConstraintMakerPriortizable.swift in Sources */,
