@@ -42,7 +42,7 @@ class TwoTableViewCell: BaseTableViewCell {
         }
         
         // TODO: 更加model计算cell的高度
-        height = 50.0 + 100.0
+        height = 60.0
         return height
     }
 

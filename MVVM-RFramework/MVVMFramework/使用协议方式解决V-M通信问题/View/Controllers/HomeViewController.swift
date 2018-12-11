@@ -29,7 +29,7 @@ class HomeViewController: UIViewController {
     }()
     
     var viewModel: HomeViewModel = HomeViewModel()
-    var dataSources: [BaseModel] = [BaseModel]()
+    var sections: [BaseSectionModel] = [BaseSectionModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,53 +46,58 @@ class HomeViewController: UIViewController {
     }
     
     func loadDataSource() {
-        viewModel.loadHomeDataSource { [weak self] (success, models, msg) in
-            if success {
-                self?.dataSources = models
+        viewModel.loadHomeDataSource { [weak self] (result, sections, msg) in
+            switch result {
+            case .successNotEmpty:
+                self?.sections = sections
                 self?.tableView.reloadData()
-            } else {
+            case .successEmpty:
+                print("暂无数据！")
+            case .networkFail:
+                print("网络请求错误：\(msg)")
+            case .serviceFail:
                 print("网络请求错误：\(msg)")
             }
         }
     }
-    
 }
 
 // MARK: - <UITableViewDelegate, UITableViewDataSource>
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return dataSources.count
+        return sections.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return sections[section].showCellCount
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let model = dataSources[indexPath.section]
+        let model = sections[indexPath.section].items[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: model.cellIdentifier, for: indexPath) as! BaseTableViewCell
-//        cell.item = model
         cell.setupContent(model: model)
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let model  = dataSources[indexPath.section]
+        let section = sections[indexPath.section]
+        if section.cellHeight > 0.0 {
+            return section.cellHeight
+        }
+        let model  = section.items[indexPath.row]
         let cell   = tableView.dequeueReusableCell(withIdentifier: model.cellIdentifier) as! BaseTableViewCell
         let height = cell.cellHeight(model)
-        // 缓存高度
-        model.cellHeight = Float(height)
-        dataSources[indexPath.section] = model
+        sections[indexPath.section].cellHeight = height
         return height
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 8.0
+        return sections[section].headerHeight
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 0.001
+        return sections[section].footerHeight
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

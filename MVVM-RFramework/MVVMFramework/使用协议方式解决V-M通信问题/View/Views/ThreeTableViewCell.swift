@@ -39,7 +39,7 @@ class ThreeTableViewCell: BaseTableViewCell {
         }
         
         // TODO: 更加model计算cell的高度
-        height = 50.0 + 100.0
+        height = 120.0
         return height
     }
 }
