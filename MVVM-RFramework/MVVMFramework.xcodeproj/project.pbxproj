@@ -66,7 +66,6 @@
 		9932A0C621B7C18E003DC45A /* TDViewMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932A0C521B7C18E003DC45A /* TDViewMacros.swift */; };
 		999EAD3E21BE3E70004C676D /* HomeViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999EAD3D21BE3E70004C676D /* HomeViewDelegate.swift */; };
 		999EAD4021BE42A8004C676D /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999EAD3F21BE42A7004C676D /* UIView+Helper.swift */; };
-		99F8319F21BF6A560059B344 /* HomeServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F8319E21BF6A560059B344 /* HomeServices.swift */; };
 		99F831A121BF92980059B344 /* CommonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F831A021BF92980059B344 /* CommonEnum.swift */; };
 		99F831A321BF9F100059B344 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F831A221BF9F100059B344 /* HomeRouter.swift */; };
 /* End PBXBuildFile section */
@@ -133,7 +132,6 @@
 		9932A0C521B7C18E003DC45A /* TDViewMacros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDViewMacros.swift; sourceTree = "<group>"; };
 		999EAD3D21BE3E70004C676D /* HomeViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewDelegate.swift; sourceTree = "<group>"; };
 		999EAD3F21BE42A7004C676D /* UIView+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Helper.swift"; sourceTree = "<group>"; };
-		99F8319E21BF6A560059B344 /* HomeServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServices.swift; sourceTree = "<group>"; };
 		99F831A021BF92980059B344 /* CommonEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonEnum.swift; sourceTree = "<group>"; };
 		99F831A221BF9F100059B344 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -221,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				9932A07321B7B4D0003DC45A /* HomeViewModel.swift */,
-				99F8319E21BF6A560059B344 /* HomeServices.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -452,7 +449,6 @@
 				9932A0A221B7B914003DC45A /* ConstraintAttributes.swift in Sources */,
 				9932A0A421B7B914003DC45A /* ConstraintPriorityTarget.swift in Sources */,
 				999EAD4021BE42A8004C676D /* UIView+Helper.swift in Sources */,
-				99F8319F21BF6A560059B344 /* HomeServices.swift in Sources */,
 				9932A06421B7AE32003DC45A /* BaseTableViewCell.swift in Sources */,
 				9932A0BF21B7B914003DC45A /* ConstraintMakerRelatable.swift in Sources */,
 				9932A0A521B7B914003DC45A /* ConstraintInsets.swift in Sources */,
