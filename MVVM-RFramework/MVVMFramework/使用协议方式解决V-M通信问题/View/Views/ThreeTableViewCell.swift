@@ -38,7 +38,7 @@ class ThreeTableViewCell: BaseTableViewCell {
             return CGFloat(model.cellHeight)
         }
         
-        // TODO: 更加model计算cell的高度
+        // TODO: 根据model计算cell的高度
         height = 120.0
         return height
     }

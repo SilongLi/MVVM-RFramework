@@ -1,9 +1,9 @@
 //
 //  TDPMacros.swift
-//  PrivateEquity
+//  MVVMFramework
 //
-//  Created by Andy Lee on 11/08/2017.
-//  Copyright © 2017 TDW.CN. All rights reserved.
+//  Created by lisilong on 2018/12/5.
+//  Copyright © 2018 lisilong. All rights reserved.
 //
 
 import UIKit

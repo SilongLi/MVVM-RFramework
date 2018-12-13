@@ -1,9 +1,9 @@
 //
 //  UITableView+nib.swift
-//  TuandaiLoan
+//  MVVMFramework
 //
-//  Created by yfm on 2018/10/13.
-//  Copyright © 2018年 com.tuandaiwang.www. All rights reserved.
+//  Created by lisilong on 2018/12/5.
+//  Copyright © 2018 lisilong. All rights reserved.
 //
 
 import UIKit

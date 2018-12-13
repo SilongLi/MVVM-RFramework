@@ -1,9 +1,9 @@
 //
 //  Namespace.swift
-//  PrivateEquity
+//  MVVMFramework
 //
-//  Created by leoli on 2017/11/22.
-//  Copyright © 2017年 TDW.CN. All rights reserved.
+//  Created by lisilong on 2018/12/5.
+//  Copyright © 2018 lisilong. All rights reserved.
 //
 
 import UIKit
